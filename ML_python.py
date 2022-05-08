@@ -42,18 +42,18 @@ print(y, y + 1, y*2, y**2)
 
 # booleans
 t, f = True, False
-print(type(t))  # Prints "<type 'bool'>"
+print(type(t))  # prints "<type 'bool'>"
 
-print(t and f)  # Logical AND
-print(t or f)  # Logical OR
-print(not t)  # Logical NOT
+print(t and f)  # logical AND
+print(t or f)  # logical OR
+print(not t)  # logical NOT
 
 # string
-hello = 'hello'  # String literals can use single quotes
+hello = 'hello'  # string literals can use single quotes
 world = "world"  # or double quotes; it does not matter.
 print(hello, len(hello))
 
-hw = hello + ' ' + world  # String concatenation
+hw = hello + ' ' + world  # string concatenation
 print(hw)  # prints "hello world"
 # ----------------------------------------------------------------------------------------------------
 # container
@@ -75,34 +75,34 @@ d[0:2]
 d[1:4]
 d[0:0]
 
-xs = [3, 1, 2]  # Create a list
+xs = [3, 1, 2]  # create a list
 print(xs, xs[2])
 print(xs[0], xs[1])
-print(xs[-1])  # Negative indices count from the end of the list; prints "2"
+print(xs[-1])  # negative indices count from the end of the list; prints "2"
 
-xs[2] = 'foo'  # Lists can contain elements of different types
+xs[2] = 'foo'  # lists can contain elements of different types
 print(xs)
 
-xs.append('bar')  # Add a new element to the end of the list
+xs.append('bar')  # add a new element to the end of the list
 print(xs)
 
-x = xs.pop()  # Remove and return the last element of the list
+x = xs.pop()  # remove and return the last element of the list
 print(x, xs)
 
 # slicing
 # range is a built-in function that creates a list of integers
 nums = list(range(5))
 
-print(nums)  # Prints "[0, 1, 2, 3, 4]"
-print(nums[2:4])  # Get a slice from index 2 to 4 (exclusive); prints "[2, 3]"
-print(nums[2:])  # Get a slice from index 2 to the end; prints "[2, 3, 4]"
-# Get a slice from the start to index 2 (exclusive); prints "[0, 1]"
+print(nums)  # prints "[0, 1, 2, 3, 4]"
+print(nums[2:4])  # get a slice from index 2 to 4 (exclusive); prints "[2, 3]"
+print(nums[2:])  # get a slice from index 2 to the end; prints "[2, 3, 4]"
+# get a slice from the start to index 2 (exclusive); prints "[0, 1]"
 print(nums[:2])
-print(nums[:])  # Get a slice of the whole list; prints ["0, 1, 2, 3, 4]"
-print(nums[:-1])  # Slice indices can be negative; prints ["0, 1, 2, 3]"
+print(nums[:])  # get a slice of the whole list; prints ["0, 1, 2, 3, 4]"
+print(nums[:-1])  # slice indices can be negative; prints ["0, 1, 2, 3]"
 
-nums[2:4] = [8, 9]  # Assign a new sublist to a slice
-print(nums)  # Prints "[0, 1, 8, 8, 4]"
+nums[2:4] = [8, 9]  # assign a new sublist to a slice
+print(nums)  # prints "[0, 1, 8, 8, 4]"
 
 # condition
 weekday = True
